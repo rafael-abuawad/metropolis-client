@@ -1,0 +1,113 @@
+<div
+  class="container relative grid h-screen w-full flex-col items-center justify-center lg:max-w-none lg:grid-cols-2 lg:px-0 ext-black dark:text-white"
+>
+  <div
+    class="absolute right-4 top-4 flex items-center space-x-4 md:right-8 md:top-8"
+  >
+    <a
+      href="/"
+      class="text-black-500 dark:text-black-400 hover:bg-black-50 dark:hover:bg-black-950 focus-visible:ring-black-500 dark:focus-visible:ring-black-400 inline-flex flex-shrink-0 items-center gap-x-1.5 rounded-md px-2.5 py-1.5 text-sm font-medium ring-1 ring-inset ring-current focus:outline-none focus-visible:outline-0 focus-visible:ring-2 disabled:cursor-not-allowed disabled:bg-transparent disabled:opacity-75 dark:disabled:bg-transparent"
+    >
+      Iniciar Sesión
+    </a>
+  </div>
+  <div class="bg-muted relative hidden h-full flex-col p-10 text-white lg:flex">
+    <div
+      class="bg-purple absolute inset-0 bg-gradient-to-r from-[#11998e] to-[#38ef7d]"
+    ></div>
+    <div class="relative z-20 flex items-center text-xl font-bold">
+      <span class="i-heroicons-square-3-stack-3d mr-1"></span>
+      Metropolis
+    </div>
+    <div class="relative z-20 mt-auto">
+      <blockquote class="space-y-2">
+        <p class="text-lg">
+          “La principal plataforma de empleo en el país. Nuestro portal de
+          ofertas laborales y oportunidades de empleo cuenta con una amplia y
+          completa cobertura en todo el territorio boliviano.”
+        </p>
+        <footer class="text-sm">— Sofia Davis</footer>
+      </blockquote>
+    </div>
+  </div>
+  <div class="p-4 lg:p-8">
+    <div
+      class="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]"
+    >
+      <div class="flex flex-col space-y-2 text-center">
+        <h1 class="text-2xl font-semibold tracking-tight">Crear una cuenta</h1>
+        <p class="text-muted-foreground text-sm">
+          Ingrese su correo electronico para crear una cuenta
+        </p>
+      </div>
+      <div class="grid gap-6">
+        <form>
+          <div class="grid gap-2">
+            <div class="grid gap-1">
+              <l class="sr-only" for="email"> Email </l>
+              <div class="relative">
+                <input
+                  id="email"
+                  value=""
+                  type="email"
+                  placeholder="pedro@email.com"
+                  class="form-input relative block w-full rounded-md border-0 bg-white px-2.5 py-1.5 text-sm text-gray-900 placeholder-gray-400 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:cursor-not-allowed disabled:opacity-75 dark:bg-gray-900 dark:text-white dark:placeholder-gray-500 dark:ring-gray-700 dark:focus:ring-indigo-400"
+                  autocapitalize="none"
+                  autocomplete="email"
+                  autocorrect="off"
+                />
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary">
+              <span class="flex w-full justify-center">
+                Iniciar Sesión con Email
+              </span>
+            </button>
+          </div>
+        </form>
+        <div class="relative">
+          <div class="absolute inset-0 flex items-center">
+            <span class="w-full border-t dark:border-none"></span>
+          </div>
+          <div class="relative flex justify-center text-xs uppercase">
+            <span class="px-2"> O continua con </span>
+          </div>
+        </div>
+        <div class="grid gap-2">
+          <button
+            type="button"
+            class="inline-flex flex-shrink-0 items-center gap-x-1.5 rounded-md bg-gray-900 px-2.5 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-gray-800 focus:outline-none focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-500 disabled:cursor-not-allowed disabled:bg-gray-900 disabled:opacity-75 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100 dark:focus-visible:ring-indigo-400 dark:disabled:bg-white"
+          >
+            <span class="flex w-full items-center justify-center">
+              <i class="fa-brands fa-google h-4 mr-1"></i>
+              Google
+            </span>
+          </button
+          ><button
+            type="button"
+            class="inline-flex flex-shrink-0 items-center gap-x-1.5 rounded-md bg-gray-900 px-2.5 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-gray-800 focus:outline-none focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-500 disabled:cursor-not-allowed disabled:bg-gray-900 disabled:opacity-75 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100 dark:focus-visible:ring-indigo-400 dark:disabled:bg-white"
+          >
+            <span class="flex w-full items-center justify-center">
+              <i class="fa-brands fa-apple h-4 mr-1"></i>
+              Apple
+            </span>
+          </button>
+        </div>
+      </div>
+      <p class="text-muted-foreground px-8 text-center text-sm">
+        Al hacer clic en continuar, aceptas nuestros
+        <a href="/terms" class="hover:text-indigo underline underline-offset-4"
+          >Terminos de Servicio</a
+        >
+        y
+        <a
+          href="/privacy"
+          class="hover:text-indigo underline underline-offset-4"
+        >
+          Politica de Privacidad
+        </a>
+        .
+      </p>
+    </div>
+  </div>
+</div>

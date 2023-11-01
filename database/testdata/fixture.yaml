@@ -1,0 +1,187 @@
+- model: Company
+  rows:
+    - _id: 1
+      name: 'Tech Enterprises'
+      twitter_url: 'https://twitter.com/tech_ent'
+      facebook_url: 'https://facebook.com/tech_enterprises'
+      instagram_url: 'https://instagram.com/tech_ent'
+      website_url: 'https://www.techent.com'
+
+    - _id: 2
+      name: 'Marketing Solutions Inc.'
+      twitter_url: 'https://twitter.com/marketing_inc'
+      facebook_url: 'https://facebook.com/marketing_solutions'
+      instagram_url: 'https://instagram.com/marketing_inc'
+      website_url: 'https://www.marketinginc.com'
+
+- model: Job
+  rows:
+    - _id: 1
+      content: 'Senior Software Engineer'
+      apply_url: 'https://techent.com/apply1'
+
+    - _id: 2
+      content: 'Marketing Manager'
+      apply_url: 'https://marketinginc.com/apply2'
+
+    - _id: 3
+      content: 'Data Analyst'
+      apply_url: 'https://techent.com/apply3'
+
+- model: JobPost
+  rows:
+    - _id: 1
+      title: 'Software Engineer Position at Tech Enterprises'
+      image_url: '/public/images/coinbase-logo.png'
+      description_abbr: 'Exciting software engineering opportunity.'
+      description: 'Tech Enterprises is seeking a talented software engineer...'
+      location: 'Cochabamba, Bolivia'
+      is_remote: false
+      salary_min: '75000'
+      salary_max: '100000'
+      job_id: 1
+
+    - _id: 2
+      title: 'Marketing Manager Job at Marketing Solutions Inc.'
+      image_url: '/public/images/seedify-logo.jpeg'
+      description_abbr: 'Join our marketing team.'
+      description: 'Marketing Solutions Inc. is looking for a highly motivated...'
+      location: 'Cochabamba, Bolivia'
+      is_remote: true
+      job_id: 2
+
+    - _id: 3
+      title: 'Data Analyst Role at Tech Enterprises'
+      image_url: '/public/images/solana-logo.jpg'
+      description_abbr: 'Data analyst needed.'
+      description: 'Tech Enterprises is hiring a data analyst to work on...'
+      location: 'La Paz, Bolivia'
+      is_remote: false
+      salary_min: '70000'
+      salary_max: '90000'
+      job_id: 3
+
+- model: CompanyToJobPost
+  rows:
+    - company_id: 1
+      job_post_id: 1
+    - company_id: 1
+      job_post_id: 2
+    - company_id: 2
+      job_post_id: 2
+
+- model: Tag
+  rows:
+    - _id: 1
+      name: 'Technology'
+
+    - _id: 2
+      name: 'Health'
+
+    - _id: 3
+      name: 'Education'
+
+    - _id: 4
+      name: 'Finance'
+
+    - _id: 5
+      name: 'Marketing'
+
+    - _id: 6
+      name: 'Sales'
+
+    - _id: 7
+      name: 'Design'
+
+    - _id: 8
+      name: 'Engineering'
+
+    - _id: 9
+      name: 'Culinary'
+
+    - _id: 10
+      name: 'Sports'
+
+    - _id: 11
+      name: 'Art'
+
+    - _id: 12
+      name: 'Tourism'
+
+    - _id: 13
+      name: 'Transportation'
+
+    - _id: 14
+      name: 'Environment'
+
+    - _id: 15
+      name: 'Science'
+
+    - _id: 16
+      name: 'Construction'
+
+    - _id: 17
+      name: 'Fashion'
+
+    - _id: 18
+      name: 'Music'
+
+    - _id: 19
+      name: 'Services'
+
+    - _id: 20
+      name: 'Research'
+
+    - _id: 21
+      name: 'Cinema'
+
+    - _id: 22
+      name: 'Literature'
+
+    - _id: 23
+      name: 'Telecommunications'
+
+    - _id: 24
+      name: 'Agriculture'
+
+    - _id: 25
+      name: 'Energy'
+
+    - _id: 26
+      name: 'Law'
+
+    - _id: 27
+      name: 'Human Resources'
+
+    - _id: 28
+      name: 'Security'
+
+    - _id: 29
+      name: 'Logistics'
+
+    - _id: 30
+      name: 'Communication'
+
+    - _id: 31
+      name: 'Social'
+
+    - _id: 32
+      name: 'Architecture'
+
+    - _id: 33
+      name: 'Television'
+
+- model: JobPostToTag
+  rows:
+    - job_post_id: 1
+      tag_id: 1
+    - job_post_id: 1
+      tag_id: 2
+    - job_post_id: 2
+      tag_id: 2
+    - job_post_id: 2
+      tag_id: 3
+    - job_post_id: 3
+      tag_id: 1
+    - job_post_id: 3
+      tag_id: 3

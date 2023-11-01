@@ -1,0 +1,42 @@
+/* https://play.tailwindcss.com/fAo5TE2g7m?file=css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .badge {
+    @apply m-1 inline-flex cursor-pointer items-center rounded-md bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-500 hover:bg-indigo-500 hover:text-white dark:bg-indigo-400 dark:bg-opacity-10 dark:text-indigo-400;
+  }
+  .tag {
+    @apply m-1 inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-700 ring-1 ring-inset ring-gray-300 dark:bg-gray-800 dark:text-gray-200 dark:ring-gray-700;
+  }
+
+  .btn.btn-black {
+    @apply inline-flex flex-shrink-0 items-center gap-x-1.5 rounded-md bg-gray-900 px-2.5 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-gray-800 focus:outline-none focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-500 disabled:cursor-not-allowed disabled:bg-gray-900 disabled:opacity-75 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100 dark:focus-visible:ring-indigo-400 dark:disabled:bg-white;
+  }
+
+  .btn.btn-outline {
+    @apply inline-flex flex-shrink-0 items-center gap-x-1.5 rounded-md px-2.5 py-1.5 text-sm font-medium text-black ring-1 ring-inset ring-current hover:bg-white focus:outline-none focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-black disabled:cursor-not-allowed disabled:bg-transparent disabled:opacity-75 dark:text-white dark:hover:bg-black dark:focus-visible:ring-white dark:disabled:bg-transparent;
+  }
+
+  .btn.btn-primary {
+    @apply inline-flex flex-shrink-0 items-center gap-x-1.5 rounded-md bg-indigo-500 px-2.5 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-indigo-600 focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 disabled:cursor-not-allowed disabled:bg-indigo-500 disabled:opacity-75 dark:bg-indigo-400 dark:text-gray-900 dark:hover:bg-indigo-500 dark:focus-visible:outline-indigo-400 dark:disabled:bg-indigo-400;
+  }
+
+  .card {
+    @apply divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow ring-1 ring-gray-200 dark:divide-gray-800 dark:bg-gray-900 dark:ring-gray-800;
+  }
+
+  .input {
+    @apply relative block w-full rounded-md border-0 bg-white px-3.5 py-2.5 text-base text-gray-900 placeholder-gray-400 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:cursor-not-allowed disabled:opacity-75 dark:bg-gray-900 dark:text-white dark:placeholder-gray-500 dark:ring-gray-700 dark:focus:ring-indigo-400;
+  }
+
+  .summary {
+    @apply mb-1 inline-flex w-full flex-shrink-0 cursor-pointer items-center justify-between gap-x-1.5 rounded-md bg-indigo-50 px-2.5 py-1.5 text-sm font-medium text-indigo-500 hover:bg-indigo-100 disabled:cursor-not-allowed disabled:bg-indigo-50 disabled:opacity-75 dark:bg-indigo-950 dark:fill-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-900 dark:disabled:bg-indigo-950;
+  }
+
+  .details-container {
+    @apply px-3 pb-3 pt-1.5 text-sm text-gray-500 dark:text-gray-400 grid grid-cols-1 gap-4;
+  }
+}
